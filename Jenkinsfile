@@ -38,7 +38,7 @@ withMaven(jdk: 'EC2JDK', maven: 'EC2Maven') {
 
 }
     
-     stage ('test the code'){
+     stage ('package the code'){
 
 steps {
 
