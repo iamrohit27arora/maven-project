@@ -25,6 +25,18 @@ withMaven(jdk: 'EC2JDK', maven: 'EC2Maven') {
 }
 
 }
+    
+    stage ('test the code'){
+
+steps {
+
+withMaven(jdk: 'EC2JDK', maven: 'EC2Maven') {
+    sh 'mvn test'
+}
+
+}
+
+}
 
 }
 
