@@ -19,7 +19,7 @@ stage ('compile the code'){
 steps {
 
 withMaven(jdk: 'EC2JDK', maven: 'EC2Maven') {
-    sh 'mvn complile'
+    sh 'mvn compile'
 }
 
 }
